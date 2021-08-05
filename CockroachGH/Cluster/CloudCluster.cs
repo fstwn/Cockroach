@@ -20,7 +20,7 @@ namespace CockroachGH {
             pManager.AddParameter(new Param_Cloud(), "RefPointCloud", "R", "PointCloud as a reference", GH_ParamAccess.item);
             pManager.AddNumberParameter("Radius", "R", "Radius, 0 default ", GH_ParamAccess.item,0);
             //pManager.AddIntegerParameter("Iter", "I", "Iterations", GH_ParamAccess.item,30);
-            pManager.AddIntegerParameter("Neigbhours", "N", "Neighbours for reorientation, 0 default", GH_ParamAccess.item,0);
+            pManager.AddIntegerParameter("Neigbhours", "N", "Number of neighbours used for reorientation.Defaults to 0", GH_ParamAccess.item, 0);
             pManager.AddBooleanParameter("Split", "S", "Split", GH_ParamAccess.item, false);
             pManager[1].Optional = true;
             pManager[2].Optional = true;
@@ -56,7 +56,7 @@ namespace CockroachGH {
                 DA.GetData(4, ref split);
 
 
-                var c =  PInvokeCSharp.TestCGAL.Clustering(cgh.Value, cghRef.Value, r,n, split);
+                var c =  PInvokeCSharp.TestCGAL.Clustering(cgh.Value, cghRef.Value, r, n, split);
                 //this.Message = c.Count.ToString();
 
                 GH_Cloud[] clouds = new GH_Cloud[c.Length];

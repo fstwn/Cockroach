@@ -17,9 +17,8 @@ namespace CockroachGH {
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
             pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-
-            pManager.AddNumberParameter("Radius", "R", "Radius, 0 default ", GH_ParamAccess.item,0.1);
-            pManager.AddNumberParameter("Neigbhours", "N", "Neighbours for reorientation, 0 default", GH_ParamAccess.item,0);
+            pManager.AddNumberParameter("Radius", "R", "Radius, 0 default ", GH_ParamAccess.item, 0.1);
+            pManager.AddNumberParameter("Neigbhours", "N", "Number of neighbours for reorientation. Defaults to 0", GH_ParamAccess.item, 0);
             pManager.AddNumberParameter("Iterations", "I", "Iterations", GH_ParamAccess.item, 0);
             pManager.AddBooleanParameter("InliersOrOutliers", "I/O", "InliersOrOutliers", GH_ParamAccess.item, true);
             pManager[1].Optional = true;
