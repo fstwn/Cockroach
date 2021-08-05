@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace PInvokeCSharp {
     public static class TestCGAL {
 
-
         public static Mesh CreateMeshBoolean(Mesh m1_, List<Mesh> list_m2, int Difference_Union_Intersection = 0) {
 
             Mesh m1 = m1_;
@@ -155,10 +154,6 @@ namespace PInvokeCSharp {
 
 
         }
-
-
-
-
 
         public static Mesh CreateMeshBooleanArray(Mesh[] m_, int Difference_Union_Intersection = 0) {
 
@@ -310,7 +305,6 @@ namespace PInvokeCSharp {
 
 
         }
-
 
         public static Mesh CreateMeshBooleanArrayTrackColors(Mesh[] m_, System.Drawing.Color color , int Difference_Union_Intersection = 0 ) {
             try {
@@ -638,9 +632,6 @@ namespace PInvokeCSharp {
 
         }
 
-
-
-
         public static PointCloud CreateNormals(PointCloud cloud, double radius = 0.1, int iterations = 30, int neighbours = 100,bool erase = true) {
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -816,9 +807,6 @@ namespace PInvokeCSharp {
 
         }
 
-
-
-
         public static Mesh CreatePoissonSurfaceReconstruction(PointCloud cloud, double radius = 0.1, int iterations = 30, int neighbours = 100) {
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -950,14 +938,6 @@ namespace PInvokeCSharp {
             return mesh;
 
         }
-
-
-
-
-
-
-
-
 
         public static PointCloud[] Clustering(PointCloud cloud, PointCloud cloudRef,  double radius =0,double neighbours = 0, bool split = false) {
 
@@ -1132,15 +1112,6 @@ namespace PInvokeCSharp {
 
         }
 
-
-
-
-
-
-
-
-
-
         public static PointCloud SOR(PointCloud cloud, double radius = 0, double percent = 0, int neighbours = 0, int type = 0) {
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1300,12 +1271,17 @@ namespace PInvokeCSharp {
 
         }
 
+        /*
 
+        public static void CreatePolygonalSurfaceReconstruction()
+        {
 
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //Call C++
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        }
 
-
-
-
+        */
     }
 }

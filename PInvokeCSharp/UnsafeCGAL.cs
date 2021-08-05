@@ -49,7 +49,6 @@ namespace PInvokeCSharp {
         ref int nValidMeshes
         );
 
-
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int MeshBoolean_CreateArrayTrackColors(
         [MarshalAs(UnmanagedType.LPArray)] double[] coord_mesh, [MarshalAs(UnmanagedType.LPArray)] int[] n_coordMeshArray,
@@ -64,9 +63,6 @@ namespace PInvokeCSharp {
         ref int nValidMeshes
         );
 
-
-
-
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int MeshSkeleton_Create(
         [MarshalAs(UnmanagedType.LPArray)] double[] coord_mesh1, ulong n_coord_mesh1,
@@ -75,7 +71,6 @@ namespace PInvokeCSharp {
         ref IntPtr coord_ID, ref int n_coord_ID
 
         );
-
 
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int ComputeNormals(
@@ -94,7 +89,6 @@ namespace PInvokeCSharp {
           ref IntPtr c_o, ref int c_c_o
         );
 
-
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int ComputePoissonSurfaceReconstruction(
 
@@ -111,8 +105,6 @@ namespace PInvokeCSharp {
           ref IntPtr c_o, ref int c_c_o
         );
 
-
-
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int Cluster(
              [MarshalAs(UnmanagedType.LPArray)] double[] p, ulong p_c,
@@ -128,11 +120,6 @@ namespace PInvokeCSharp {
           ref IntPtr c_o, ref int c_c_o,
           ref int numberOfClusters
         );
-
-
-
-
-
 
         [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int SOR(
@@ -152,7 +139,25 @@ namespace PInvokeCSharp {
 
             );
 
+        /*
+        
+        [DllImport(dllNameCGAL, CallingConvention = CallingConvention.Cdecl)]
+        internal static extern int ComputePolygonalSurfaceReconstruction(
 
+          [MarshalAs(UnmanagedType.LPArray)] double[] p, ulong p_c,
+          [MarshalAs(UnmanagedType.LPArray)] double[] n, ulong n_n,
+          [MarshalAs(UnmanagedType.LPArray)] double[] c, ulong c_c,
+
+            double radius,// = 0.1,
+            int iterations,// = 30,
+            int neighbours,// = 100, //reorientation
+
+          ref IntPtr p_o, ref int p_c_o,
+          ref IntPtr n_o, ref int n_n_o,
+          ref IntPtr c_o, ref int c_c_o
+        );
+
+        */
 
 
     }
