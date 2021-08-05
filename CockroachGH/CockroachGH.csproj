@@ -14,10 +14,12 @@
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\</OutputPath>
+    <OutputPath>..\..\..\..\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -26,7 +28,7 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\</OutputPath>
+    <OutputPath>%24%28SolutionDir%29\Build\%24%28Platform%29\%24%28Configuration%29\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -35,22 +37,21 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GH_IO">
-      <HintPath>..\..\..\..\..\Rhino6Old\GH_IO.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="GH_IO, Version=7.8.21196.5000, Culture=neutral, PublicKeyToken=6a29997d2e6b4f97, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grasshopper.7.8.21196.5001\lib\net48\GH_IO.dll</HintPath>
     </Reference>
-    <Reference Include="Grasshopper">
-      <HintPath>..\..\..\..\..\Rhino6Old\Grasshopper.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Grasshopper, Version=7.8.21196.5000, Culture=neutral, PublicKeyToken=dda4f5ec2cd80803, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grasshopper.7.8.21196.5001\lib\net48\Grasshopper.dll</HintPath>
     </Reference>
-    <Reference Include="PInvokeCSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="PInvokeCSharp">
+      <HintPath>..\PInvokeCSharp\bin\x64\Release\PInvokeCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PlyReaderWriter, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>bin\x64\Release\PlyReaderWriter.dll</HintPath>
     </Reference>
-    <Reference Include="RhinoCommon">
-      <HintPath>..\..\..\..\..\Rhino6Old\RhinoCommon.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="RhinoCommon, Version=7.8.21196.5000, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+      <HintPath>..\packages\RhinoCommon.7.8.21196.5001\lib\net48\RhinoCommon.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -101,12 +102,6 @@
     <Compile Include="ToDo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PlyReaderWriter\PlyReaderWriter.csproj">
-      <Project>{173cf4f2-b13c-4141-b38d-e1d8ce4b2b29}</Project>
-      <Name>PlyReaderWriter</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -155,6 +150,8 @@
     <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Resources\Cluster.png" />
   </ItemGroup>
   <ItemGroup>
@@ -232,10 +229,18 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
-Erase "$(TargetPath)"</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <FallbackCulture>en-US</FallbackCulture>
   </PropertyGroup>
+  <Import Project="..\packages\RhinoCommon.7.8.21196.5001\build\RhinoCommon.targets" Condition="Exists('..\packages\RhinoCommon.7.8.21196.5001\build\RhinoCommon.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\RhinoCommon.7.8.21196.5001\build\RhinoCommon.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\RhinoCommon.7.8.21196.5001\build\RhinoCommon.targets'))" />
+    <Error Condition="!Exists('..\packages\Grasshopper.7.8.21196.5001\build\Grasshopper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grasshopper.7.8.21196.5001\build\Grasshopper.targets'))" />
+  </Target>
+  <Import Project="..\packages\Grasshopper.7.8.21196.5001\build\Grasshopper.targets" Condition="Exists('..\packages\Grasshopper.7.8.21196.5001\build\Grasshopper.targets')" />
 </Project>
