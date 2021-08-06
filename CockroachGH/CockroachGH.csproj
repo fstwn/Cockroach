@@ -19,7 +19,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>..\..\..\..\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\</OutputPath>
+    <OutputPath>..\Build\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -28,7 +28,7 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>%24%28SolutionDir%29\Build\%24%28Platform%29\%24%28Configuration%29\</OutputPath>
+    <OutputPath>..\Build\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -44,7 +44,7 @@
       <HintPath>..\packages\Grasshopper.7.8.21196.5001\lib\net48\Grasshopper.dll</HintPath>
     </Reference>
     <Reference Include="PInvokeCSharp">
-      <HintPath>..\PInvokeCSharp\bin\x64\Release\PInvokeCSharp.dll</HintPath>
+      <HintPath>..\Build\PInvokeCSharp.dll</HintPath>
     </Reference>
     <Reference Include="PlyReaderWriter, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
@@ -75,6 +75,8 @@
     <Compile Include="Mesh\CloudPopulateMesh.cs" />
     <Compile Include="Mesh\MeshBoolean.cs" />
     <Compile Include="Mesh\MeshSkeleton.cs" />
+    <Compile Include="PointCloudParam\CloudAddValues.cs" />
+    <Compile Include="PointCloudParam\CloudValues.cs" />
     <Compile Include="PointCloudParam\CloudPreview.cs" />
     <Compile Include="PointCloudParam\CloudSwap.cs" />
     <Compile Include="PointCloudParam\CloudMerge.cs" />
@@ -229,7 +231,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV"</PostBuildEvent>
+    <PostBuildEvent>Copy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\CockroachGH.gha"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <FallbackCulture>en-US</FallbackCulture>
