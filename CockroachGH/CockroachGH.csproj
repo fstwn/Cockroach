@@ -75,8 +75,8 @@
     <Compile Include="Mesh\CloudPopulateMesh.cs" />
     <Compile Include="Mesh\MeshBoolean.cs" />
     <Compile Include="Mesh\MeshSkeleton.cs" />
-    <Compile Include="PointCloudParam\CloudAddValues.cs" />
-    <Compile Include="PointCloudParam\CloudValues.cs" />
+    <Compile Include="PointCloudParam\CloudAddPointValues.cs" />
+    <Compile Include="PointCloudParam\CloudPointValues.cs" />
     <Compile Include="PointCloudParam\CloudPreview.cs" />
     <Compile Include="PointCloudParam\CloudSwap.cs" />
     <Compile Include="PointCloudParam\CloudMerge.cs" />

@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\Build\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -172,6 +172,7 @@
     <ClInclude Include="baseCGALCluster.h" />
     <ClInclude Include="baseCGALMeshPointSetDistance.h" />
     <ClInclude Include="baseCGALPoisson.h" />
+    <ClInclude Include="baseCGALPolygonal.h" />
     <ClInclude Include="baseCGALsor.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
@@ -181,6 +182,7 @@
     <ClCompile Include="baseCGALCluster.cpp" />
     <ClCompile Include="baseCGALMeshPointSetDistance.cpp" />
     <ClCompile Include="baseCGALPoisson.cpp" />
+    <ClCompile Include="baseCGALPolygonal.cpp" />
     <ClCompile Include="baseCGALsor.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="pch.cpp">
