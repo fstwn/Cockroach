@@ -11,8 +11,8 @@ namespace CockroachGH {
 
         public CloudMerge()
   : base("CloudMerge", "CloudMerge",
-      "CloudMerge",
-      "Cockroach", "Cloud") {
+         "Merge multiple PointClouds into one.",
+         "Cockroach", "Cloud") {
         }
         public override GH_Exposure Exposure => GH_Exposure.primary;
 
