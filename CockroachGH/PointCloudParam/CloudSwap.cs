@@ -10,21 +10,19 @@ namespace CockroachGH {
 
         public CloudSwap()
   : base("CloudSwap", "CloudSwap",
-      "CloudSwap",
-      "Cockroach", "Cloud") {
+         "Swap the Points, Normals and Colors of a PointCloud with each other based on a mask.",
+         "Cockroach", "Cloud") {
         }
         public override GH_Exposure Exposure => GH_Exposure.quarternary;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager) {
-
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
-            pManager.AddTextParameter("Mask", "M", "Mask, write 3 letters P - points, N - normals, C- colors, i.e. PCN, CPN",GH_ParamAccess.item, "CPN");
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud to swap values for.", GH_ParamAccess.item);
+            pManager.AddTextParameter("Mask", "M", "Mask used for swapping, consisting of 3 letters: P - points, N - normals, C- colors, i.e. PCN, CPN.",GH_ParamAccess.item, "CPN");
             pManager[1].Optional = true;
         }
 
-
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager) {
-            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "PointCloud", GH_ParamAccess.item);
+            pManager.AddParameter(new Param_Cloud(), "PointCloud", "C", "The PointCloud with its values swapped according to the input mask.", GH_ParamAccess.item);
         }
 
         protected override void SolveInstance(IGH_DataAccess DA) {
@@ -124,7 +122,6 @@ namespace CockroachGH {
 
             DA.SetData(0,new GH_Cloud(c));
         }
-
 
         /// <summary>
         /// Gets the unique ID for this component. Do not change this ID after release.
