@@ -141,7 +141,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\libs\Open3DDynamic\Open3D\include\open3d\3rdparty;C:\Program Files\PCL 1.11.1\3rdParty\Boost\include\boost-1_74;C:\Program Files\cilantro\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\libs\Open3DDynamic\Open3D\include\open3d\3rdparty;C:\libs\boost_1_76_0;C:\libs\cilantro\include;C:\libs\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

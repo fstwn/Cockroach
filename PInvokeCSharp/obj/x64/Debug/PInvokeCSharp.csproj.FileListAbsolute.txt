@@ -7,3 +7,9 @@ C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.d
 C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\Cockroach\PInvokeCSharp.pdb
 C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.dll
 C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.pdb
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\bin\x64\Debug\PInvokeCSharp.dll
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\bin\x64\Debug\PInvokeCSharp.pdb
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.csproj.AssemblyReference.cache
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.csproj.CoreCompileInputs.cache
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.dll
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Debug\PInvokeCSharp.pdb

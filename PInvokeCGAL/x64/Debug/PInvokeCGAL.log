@@ -1,9 +1,54 @@
 ﻿  pch.cpp
   baseCGAL.cpp
-C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCGAL\baseCGAL.h(16,10): fatal error C1083: Cannot open include file: 'CGAL/Polyhedron_items_with_id_3.h': No such file or directory
+C:\libs\boost_1_76_0\boost\detail\iterator.hpp(13): message : This header is deprecated. Use <iterator> instead.
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(68,67): warning C4267: 'argument': conversion from 'size_t' to 'CGAL::Surface_mesh<CGAL::Point_3<Kernel_>>::size_type', possible loss of data
+          with
+          [
+              Kernel_=CGAL::Epick
+          ]
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(69,67): warning C4267: 'argument': conversion from 'size_t' to 'CGAL::Surface_mesh<CGAL::Point_3<Kernel_>>::size_type', possible loss of data
+          with
+          [
+              Kernel_=CGAL::Epick
+          ]
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(127,37): warning C4101: 'e': unreferenced local variable
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(335,41): warning C4101: 'e': unreferenced local variable
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(563,15): warning C4244: 'initializing': conversion from 'boost::detail::adj_list_gen<boost::adjacency_list<boost::vecS,boost::vecS,boost::undirectedS,CGAL::Mean_curvature_flow_skeletonization<Polyhedron,CGAL::Default,CGAL::Default,CGAL::Default>::Vmap,boost::no_property,boost::no_property,boost::listS>,VertexListS,OutEdgeListS,DirectedS,VertexProperty,EdgeProperty,GraphProperty,EdgeListS>::config::vertices_size_type' to 'double', possible loss of data
+          with
+          [
+              VertexListS=boost::vecS,
+              OutEdgeListS=boost::vecS,
+              DirectedS=boost::undirectedS,
+              VertexProperty=CGAL::Mean_curvature_flow_skeletonization<Polyhedron,CGAL::Default,CGAL::Default,CGAL::Default>::Vmap,
+              EdgeProperty=boost::no_property,
+              GraphProperty=boost::no_property,
+              EdgeListS=boost::listS
+          ]
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(564,15): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(613,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(613,38): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(639,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(639,40): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(756,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(759,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(762,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGAL.cpp(981,41): warning C4101: 'e': unreferenced local variable
   baseCGALCluster.cpp
-C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCGAL\baseCGALCluster.h(5,10): fatal error C1083: Cannot open include file: 'CGAL/Exact_predicates_inexact_constructions_kernel.h': No such file or directory
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALCluster.cpp(82,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALCluster.cpp(123,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALCluster.cpp(126,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  baseCGALMeshPointSetDistance.cpp
+C:\libs\boost_1_76_0\boost\detail\iterator.hpp(13): message : This header is deprecated. Use <iterator> instead.
   baseCGALPoisson.cpp
-C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCGAL\baseCGALPoisson.h(6,10): fatal error C1083: Cannot open include file: 'CGAL/Exact_predicates_inexact_constructions_kernel.h': No such file or directory
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALPoisson.cpp(81,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALPoisson.cpp(84,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALPoisson.cpp(87,56): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALPoisson.cpp(149,52): warning C4244: '=': conversion from 'unsigned __int64' to 'double', possible loss of data
+  baseCGALPolygonal.cpp
+  baseCGALsor.cpp
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALsor.cpp(101,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALsor.cpp(104,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALsor.cpp(107,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
   dllmain.cpp
   Generating Code...
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCGAL\baseCGALPoisson.cpp : fatal error C1128: number of sections exceeded object file format limit: compile with /bigobj

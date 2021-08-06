@@ -231,7 +231,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>Copy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\CockroachGH.gha"</PostBuildEvent>
+    <PostBuildEvent>Copy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\CockroachGH.gha"
+Copy "$(TargetPath)" "$(TargetDir)$(ProjectName).gha"
+Erase "$(TargetPath)"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <FallbackCulture>en-US</FallbackCulture>

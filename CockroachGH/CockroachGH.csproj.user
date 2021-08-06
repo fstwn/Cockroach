@@ -7,4 +7,8 @@
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Rhino 7\System\Rhino.exe</StartProgram>
+  </PropertyGroup>
 </Project>

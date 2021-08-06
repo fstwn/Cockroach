@@ -21,7 +21,7 @@
     <OutputPath>bin\x64\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
@@ -63,6 +63,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV"</PostBuildEvent>
+    <PostBuildEvent>Copy "$(TargetPath)" "C:\Users\EFESTWIN\AppData\Roaming\Grasshopper\Libraries\CockroachDEV\$(TargetFileName)"</PostBuildEvent>
   </PropertyGroup>
 </Project>
