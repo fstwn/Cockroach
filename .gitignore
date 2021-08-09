@@ -23,7 +23,7 @@
 #!**/packages/repositories.config
 
 
-# Build results
+# Intermediate Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

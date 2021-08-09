@@ -8,3 +8,8 @@ C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\x64\Release\PInvokeCSharp.pdb
 C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.dll
 C:\Users\petra\AppData\Roaming\Grasshopper\6\Libraries\ngon\PInvokeCSharp.pdb
 C:\libs\PInvokeCPPCSHARP\PInvoke\PInvokeCSharp\obj\x64\Release\PInvokeCSharp.csprojAssemblyReference.cache
+C:\Users\EFESTWIN\source\repos\Cockroach\Build\PInvokeCSharp.dll
+C:\Users\EFESTWIN\source\repos\Cockroach\Build\PInvokeCSharp.pdb
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Release\PInvokeCSharp.csproj.CoreCompileInputs.cache
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Release\PInvokeCSharp.dll
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCSharp\obj\x64\Release\PInvokeCSharp.pdb

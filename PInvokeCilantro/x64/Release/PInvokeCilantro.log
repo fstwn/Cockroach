@@ -1,5 +1,70 @@
 ﻿  pch.cpp
   baseCilantroCluster.cpp
-C:\libs\cilantro\include\cilantro\core\covariance.hpp(6,10): fatal error C1083: Cannot open include file: 'cilantro/config.hpp': No such file or directory
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCilantro\baseCilantroCluster.cpp(69,27): warning C4018: '<': signed/unsigned mismatch
+C:\libs\cilantro\build\include\cilantro\core\kd_tree.hpp(144,37): warning C4244: 'argument': conversion from 'Eigen::Index' to 'const int', possible loss of data
+C:\libs\cilantro\build\include\cilantro\core\kd_tree.hpp(141): message : while compiling class template member function 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::KDTree(const cilantro::ConstDataMatrixMap<ScalarT,3> &,size_t)'
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\libs\cilantro\build\include\cilantro\clustering\connected_component_extraction.hpp(362): message : see reference to function template instantiation 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>::KDTree(const cilantro::ConstDataMatrixMap<ScalarT,3> &,size_t)' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\Users\EFESTWIN\source\repos\Cockroach\PInvokeCilantro\baseCilantroCluster.cpp(55): message : see reference to class template instantiation 'cilantro::KDTree<ScalarT,3,DistAdaptor,PointIndexT>' being compiled
+          with
+          [
+              ScalarT=float,
+              DistAdaptor=cilantro::KDTreeDistanceAdaptors::L2,
+              PointIndexT=size_t
+          ]
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(392,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(384): message : while compiling class template member function 'float nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>::evalMetric(const T *,const size_t,size_t,float) const'
+          with
+          [
+              ScalarT=float,
+              T=float
+          ]
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(1357): message : see reference to function template instantiation 'float nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>::evalMetric(const T *,const size_t,size_t,float) const' being compiled
+          with
+          [
+              ScalarT=float,
+              T=float
+          ]
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(751): message : see reference to class template instantiation 'nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>' being compiled
+          with
+          [
+              ScalarT=float
+          ]
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(1119): message : see reference to class template instantiation 'nanoflann::KDTreeBaseClass<nanoflann::KDTreeSingleIndexAdaptor<nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,3,IndexT>,Distance,DatasetAdaptor,3,IndexType>' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t,
+              Distance=nanoflann::L2_Adaptor<float,cilantro::KDTreeDataAdaptors::EigenMap<float,3>,float>,
+              DatasetAdaptor=cilantro::KDTreeDataAdaptors::EigenMap<float,3>,
+              IndexType=size_t
+          ]
+C:\libs\cilantro\build\include\cilantro\core\kd_tree.hpp(395): message : see reference to class template instantiation 'nanoflann::KDTreeSingleIndexAdaptor<nanoflann::L2_Adaptor<ScalarT,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,ScalarT>,cilantro::KDTreeDataAdaptors::EigenMap<ScalarT,3>,3,IndexT>' being compiled
+          with
+          [
+              ScalarT=float,
+              IndexT=size_t
+          ]
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(393,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(394,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(395,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\libs\cilantro\build\include\cilantro\3rd_party\nanoflann\nanoflann.hpp(404,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   dllmain.cpp
-  Running Code Analysis for C/C++...
+     Creating library C:\Users\EFESTWIN\source\repos\Cockroach\\Build\PInvokeCilantro.lib and object C:\Users\EFESTWIN\source\repos\Cockroach\\Build\PInvokeCilantro.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 188 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  PInvokeCilantro.vcxproj -> C:\Users\EFESTWIN\source\repos\Cockroach\Build\PInvokeCilantro.dll
+          1 Datei(en) kopiert.
