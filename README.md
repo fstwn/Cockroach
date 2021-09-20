@@ -7,6 +7,8 @@
   <img  src="https://github.com/9and3/Cockroach/blob/Cockroach/exampleshorizontal.jpg">
 </p>
 
+**~ NOTE: This is a development fork of the original Cockroach, where I try to implement small additions and provide minor fixes ~**
+
 
 Cockroach is a plugin developed to introduce various commands for point cloud post-processing and meshing into Rhinoceros® [4]   environment based on reference functions already existing in the open-source library Open3D [1], CGAL [2], Cilantro [3].
 
