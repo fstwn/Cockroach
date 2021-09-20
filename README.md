@@ -1,4 +1,4 @@
-**~ NOTE: This is a development fork of the original Cockroach, where I try to implement small additions and provide minor fixes ~**
+**NOTE: This is a development fork of the original Cockroach, where I try to implement small additions and provide minor fixes**
 
 **Cockroach**
  <p align="center">
